@@ -10,3 +10,6 @@ function debug($obj){
     var_dump($obj);
     echo "</pre>";
 }
+function assets($string){
+    return "public/asset/{$string}";
+}

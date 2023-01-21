@@ -5,7 +5,12 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">
+                        <div class="left">
+                            <img src="<?=assets("img/main_slider/1.png");?>" alt="">
+                        </div>
+                        <div class="right"></div>
+                    </div>
                 </div>
 
                 <!-- If we need navigation buttons -->
