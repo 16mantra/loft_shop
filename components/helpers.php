@@ -6,7 +6,7 @@ function dd($obj){
     die;
 }
 function debug($obj){
-    echo "<pre style='background:black; color:white;; padding: 10px;'>";
+    echo "<pre style='background:black; color:white; position: absolute; left:0; top:0; z-index: 100; padding: 10px;'>";
     var_dump($obj);
     echo "</pre>";
 }

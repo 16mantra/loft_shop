@@ -32,7 +32,50 @@ nav{
     display: flex;
     gap: 37px;
 }
+.main_slider{
+    position: relative;
+}
+.main_slider .swiper-button-prev{
+    color: #797979;
+}
+.main_slider .swiper-button-next{
+    color: #797979;
+}
 .main_slider .swiper {
     width: 100%;
     height: 500px;
+}
+.main_slider .swiper-slide{
+    display: flex;
+    gap: 100px;
+}
+.main_slider .right h1{
+    font-family: 'Federo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    /* or 120% */
+
+    letter-spacing: 0.02em;
+
+}
+.main_slider .right a{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.035em;
+    background: #434343;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.main_slider .swiper-button-prev{
+    position: absolute;
+
 }

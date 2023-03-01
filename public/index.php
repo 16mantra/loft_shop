@@ -6,7 +6,7 @@ require "../components/Router.php";
 require "../components/helpers.php";
 
 $config = require "../config.php";
-$db = new QueryBuilder($config["host"], $config["dbname"], $config["username"], $config["password"]);
+$db = new QueryBuilder($config["database"]["host"], $config["database"]["dbname"], $config["database"]["username"], $config["database"]["password"]);
 
 $url = $_SERVER["REQUEST_URI"];
 

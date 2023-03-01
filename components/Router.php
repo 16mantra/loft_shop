@@ -12,6 +12,8 @@ class Router{
         {
             return "../view/pages/main.php";
         }
+
+
     }
     public static function title($url){
         if($url == "/about")
@@ -20,5 +22,16 @@ class Router{
             return "Contact";
         else if($url == "/")
             return "Main";
+    }
+    public static function admin_router($url){
+         if($url == "/admin/"){
+
+            return "../admin/pages/main.php";
+        }
+        else if($url == "/admin/slider")
+        {
+            return "../admin/pages/slider.php";
+        }
+
     }
 }
