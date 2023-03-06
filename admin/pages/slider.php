@@ -1,13 +1,4 @@
-<?php
-
-if(isset($_POST["submit"])){
-    $img = $_FILES["image"];
-    $image_path = $file_uploader->picture_uploader($img);
-    var_dump($_POST);
-}
-?>
-
-<form method="post" action="" enctype="multipart/form-data">
+<form method="post" action="/admin/slider_store" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Image</label>
         <input type="file" class="form-control" name="image">
@@ -29,5 +20,5 @@ if(isset($_POST["submit"])){
         <input type="number" value="500" class="form-control" name="sort">
     </div>
 
-    <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+    <button type="submit" class="btn btn-primary" name="store">Submit</button>
 </form>

@@ -13,3 +13,15 @@ function debug($obj){
 function assets($string){
     return "public/asset/{$string}";
 }
+
+function redirect($path){
+    var_dump("work");
+    ?>
+    <script>
+        let path = "<?=$path;?>";
+        console.log(path);
+        location.replace(path);
+    </script>
+    <?php
+
+}

@@ -2,7 +2,7 @@
 return [
     "database" => [
         "host" => "localhost",
-        "dbname" => "todo",
+        "dbname" => "loft_shop",
         "username" => "root",
         "password" => "root",
     ],
