@@ -1,3 +1,7 @@
+<?php
+$data = $slider_controller->get_all("slider");
+var_dump($data);
+?>
 <section class="main_slider">
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
@@ -7,15 +11,17 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
+                    <?php foreach ($data as $slide):?>
                     <div class="swiper-slide">
                         <div class="left">
-                            <img src="<?= assets("img/main_slider/1.png"); ?>" alt="">
+                            <img src="<?=$slide["image"] ?>" alt="">
                         </div>
                         <div class="right">
-                            <h1>Get ready for Our stylist chair</h1>
-                            <a href="#">SHOP NOW</a>
+                            <h1><?=$slide["title"]?></h1>
+                            <a href="<?=$slide["link_href"]?>"><?=$slide["link_text"]?></a>
                         </div>
                     </div>
+                    <?php endforeach;?>
                 </div>
 
                 <!-- If we need navigation buttons -->

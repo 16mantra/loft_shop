@@ -6,5 +6,5 @@ return [
         "username" => "root",
         "password" => "root",
     ],
-    "img_upload" => "dist/img/uploaded/",
+    "img_upload" => "../public/asset/img/uploaded/",
 ];

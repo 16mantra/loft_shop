@@ -1,5 +1,4 @@
 <?php
-
 ?>
 <form method="post" action="/admin/slider_store" enctype="multipart/form-data">
     <div class="mb-3">

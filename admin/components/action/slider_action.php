@@ -19,8 +19,9 @@
 
         $img = $_FILES["image"];
         $image_path = $file_uploader->picture_uploader($img);
+        $image = ltrim($image_path, "./");
         $data = [
-            "image" => $image_path,
+            "image" => $image,
             "title" => $_POST["title"],
             "link_text" => $_POST["link_text"],
             "link_href" => $_POST["link_href"],

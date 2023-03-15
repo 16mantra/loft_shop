@@ -79,3 +79,7 @@ nav{
     position: absolute;
 
 }
+.main_slider .left img{
+    width: 625px;
+    height: 450px;
+}
