@@ -3,7 +3,7 @@
 class QueryBuilder
 {
     private $pdo;
-
+    public $test = 1;
     public function __construct($host, $dbname, $username, $password)
     {
         $this->pdo = new PDO("mysql:host={$host}; dbname={$dbname}", "{$username}", "{$password}");
@@ -20,7 +20,7 @@ class QueryBuilder
 
     public function get_all($table)
     {
-        $sql = "SELECT * FROM $table WHERE (soft_delete=0)";
+        $sql = "SELECT * FROM $table";
         $query = $this->pdo->prepare($sql);
         $query->execute();
 

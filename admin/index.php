@@ -2,12 +2,16 @@
 require "../components/Router.php";
 require "../components/helpers.php";
 require "../components/FileUploader.php";
-
-
-$file_uploader = new FileUploader();
+require "components/action/slider_action.php";
 
 
 $config = require "../config.php";
+$db = new QueryBuilder($config["database"]["host"], $config["database"]["dbname"], $config["database"]["username"], $config["database"]["password"]);
+
+
+
+
+
 
 $url = $_SERVER["REQUEST_URI"];
 

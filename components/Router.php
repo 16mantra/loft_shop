@@ -25,12 +25,16 @@ class Router{
             return "Main";
     }
     public static function admin_router($url){
-        var_dump($url);
          if($url == "/admin/"){
 
             return "../admin/pages/main.php";
-        }
+         }
+
         else if($url == "/admin/slider")
+        {
+            return "../admin/pages/slider_index.php";
+        }
+        else if($url == "/admin/slider_add")
         {
             return "../admin/pages/slider.php";
         }

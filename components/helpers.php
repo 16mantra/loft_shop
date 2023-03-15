@@ -15,7 +15,6 @@ function assets($string){
 }
 
 function redirect($path){
-    var_dump("work");
     ?>
     <script>
         let path = "<?=$path;?>";

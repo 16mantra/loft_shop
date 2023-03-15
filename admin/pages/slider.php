@@ -1,3 +1,6 @@
+<?php
+
+?>
 <form method="post" action="/admin/slider_store" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Image</label>
