@@ -2,7 +2,7 @@
 
 class QueryBuilder
 {
-    private $pdo;
+    public $pdo;
     public $test = 1;
     public function __construct($host, $dbname, $username, $password)
     {

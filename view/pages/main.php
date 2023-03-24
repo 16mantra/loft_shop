@@ -1,6 +1,7 @@
 <?php
 $data = $slider_controller->get_all("slider");
-var_dump($data);
+$data = $slider_controller->slider_sort($data);
+
 ?>
 <section class="main_slider">
     <div class="swiper-button-prev"></div>
@@ -26,6 +27,15 @@ var_dump($data);
 
                 <!-- If we need navigation buttons -->
 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="best-seller">
+    <div class="container">
+        <div class="cards">
+            <div class="card col-3">
 
             </div>
         </div>
