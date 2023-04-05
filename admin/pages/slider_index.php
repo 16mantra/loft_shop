@@ -14,11 +14,12 @@ $data = get_data();
                 <img src="../<?= $card["image"] ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"><?= $card["title"] ?></h5>
-                    <p class="card-text">Link-text:<?= $card["link_text"] ?> <br> Link-adress:<?= $card["link_href"] ?></p>
+                    <p class="card-text">Link-text:<?= $card["link_text"] ?> <br> Link-adress:<?= $card["link_href"] ?>
+                    </p>
                     <a href="http://loft-shop/admin/slider_add"><?= $card["link_text"] ?></a>
                     <div class="functional mt-2 ">
-                        <a class="btn btn-primary" href="/admin/slider_edit?id=<?=$card["id"]?>">Edit</a>
-                        <a class="btn btn-danger" href="/admin/slider_action?delete=<?=$card["id"]?>">Delete</a>
+                        <a class="btn btn-primary" href="/admin/slider_edit?id=<?= $card["id"] ?>">Edit</a>
+                        <a class="btn btn-danger" href="/admin/slider_action?delete=<?= $card["id"] ?>">Delete</a>
                     </div>
 
                 </div>
