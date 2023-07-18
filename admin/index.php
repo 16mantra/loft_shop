@@ -1,9 +1,12 @@
 <?php
+session_start();
+
 require "../components/Router.php";
 require "../components/helpers.php";
 require "../components/FileUploader.php";
 require "components/action/slider_action.php";
-
+require "components/action/category_action.php";
+require "components/action/product_action.php";
 
 $config = require "../config.php";
 $db = new QueryBuilder($config["database"]["host"], $config["database"]["dbname"], $config["database"]["username"], $config["database"]["password"]);

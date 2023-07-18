@@ -22,7 +22,7 @@ if (isset($_POST["store"])) {
         "sort" => $_POST["sort"],
     ];
 
-    $slider_controller->create($data);
+    $slider_controller->create($data, "slider");
     redirect("/admin/slider");
 }
 if (isset($_POST["edit"])) {
@@ -49,12 +49,12 @@ if (isset($_POST["edit"])) {
     }
 
 
-    $slider_controller->edit($data, $_GET["id"]);
+    $slider_controller->edit($data, "slider", $_GET["id"]);
     redirect("/admin/slider");
 }
 
 if (isset($_GET["delete"])) {
-    $slider_controller->delete($_GET["delete"]);
+    $slider_controller->delete($_GET["delete"], "slider");
     redirect("/admin/slider");
 }
 

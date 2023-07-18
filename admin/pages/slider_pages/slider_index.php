@@ -4,7 +4,7 @@ $data = get_data();
 ?>
 <div class="row mb-3">
     <div class="add">
-        <a class="btn btn-primary" href="slider_add">Add new picture</a>
+        <a class="btn btn-primary" href="/admin/slider_add">Add new picture</a>
     </div>
 </div>
 <div class="row cards gx-2">
@@ -19,7 +19,7 @@ $data = get_data();
                     <a href="http://loft-shop/admin/slider_add"><?= $card["link_text"] ?></a>
                     <div class="functional mt-2 ">
                         <a class="btn btn-primary" href="/admin/slider_edit?id=<?= $card["id"] ?>">Edit</a>
-                        <a class="btn btn-danger" href="/admin/slider_action?delete=<?= $card["id"] ?>">Delete</a>
+                        <a class="btn btn-danger" href="/admin/slider_store?delete=<?= $card["id"] ?>">Delete</a>
                     </div>
 
                 </div>

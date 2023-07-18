@@ -1,6 +1,6 @@
 <?php
 if(isset($_GET["id"])){
-    $data = $slider_controller->get_by_id($_GET["id"]);
+    $data = $slider_controller->get_by_id("slider", $_GET["id"]);
 }
 ?>
 <form method="post" action="/admin/slider_action?id=<?=$data["id"]?>" enctype="multipart/form-data">

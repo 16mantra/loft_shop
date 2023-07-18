@@ -42,6 +42,20 @@
                         <p>Slider</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="/admin/category_index" class="nav-link">
+                        <!--                            <i class="nav-icon far fa-circle text-info"></i>-->
+                        <i class="nav-icon far fa-image"></i>
+                        <p>Categories</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/product_index" class="nav-link">
+                        <!--                            <i class="nav-icon far fa-circle text-info"></i>-->
+                        <i class="nav-icon far fa-image"></i>
+                        <p>Products</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

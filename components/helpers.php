@@ -13,7 +13,18 @@ function debug($obj){
 function assets($string){
     return "public/asset/{$string}";
 }
+function create_message($string, $name){
+    $_SESSION[$name] = $string;
 
+}
+function flash_message($name, $type){
+    if(isset($_SESSION[$name])){
+        echo "<div class='alert alert-{$type}' role=''alert'>";
+        echo $_SESSION[$name];
+      echo "</div>";
+      unset($_SESSION[$name]);
+    }
+}
 function redirect($path){
     ?>
     <script>

@@ -34,6 +34,7 @@ nav{
 }
 .main_slider{
     position: relative;
+    padding-bottom: 84px;
 }
 .main_slider .swiper-button-prev{
     color: #797979;
@@ -82,4 +83,221 @@ nav{
 .main_slider .left img{
     width: 625px;
     height: 450px;
+}
+.best-seller{
+    padding-bottom: 148px;
+
+}
+.best-seller h2{
+    font-family: 'Federo';
+    font-size: 40px;
+    text-align: center;
+    color: #3A3A3A;
+
+    margin-bottom: 41px;
+
+}
+.best-seller .items{
+    display: flex;
+    justify-content: space-between;
+}
+.best-seller  .item{
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+    position: relative;
+
+    padding-top:71px;
+    padding-bottom: 25px;
+}
+.best-seller .item p{
+    padding-right: 48px;
+    padding-left: 48px;
+}
+.best-seller .item span{
+    color: #8C8C8C;
+}
+.best-seller .item #product-image{
+    margin-bottom: 34px;
+}
+.best-seller .bottom-line{
+    margin-top: 30px;
+}
+.best-seller .bottom-line .item p{
+    padding-right: 95px;
+    padding-left: 95px;
+}
+.best-seller .offers{
+    position: absolute;
+    right:0;
+    top:12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.best-seller .features{
+    position: absolute;
+    right:5px;
+    top:50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    transform: translateY(-50%);
+}
+.best-seller .features button{
+    border: 0.2px solid #454545;
+    padding:7px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.best-seller .features img{
+    width: 15px;
+    height: 12px;
+}
+.best-seller .hot{
+    background: #F29731;
+    font-size: 16px;
+    color: #FFFFFF;
+
+    padding: 6px 20px;
+}
+.best-seller .discount {
+    background: #9E0B0F;
+    font-size: 16px;
+    color: #FFFFFF;
+
+    padding: 6px 20px;
+}
+.week{
+    position: relative;
+    margin-bottom: 138px;
+}
+.week .cover{
+    position: absolute;
+    right:0;
+    top:0;
+    background: #F7F7F7;;
+    height: 100%;
+    width: 500px;
+}
+.week-content{
+    position: relative;
+}
+.week  .card{
+    background: #F7F7F7;
+    border-radius: 377px 0px 0px 377px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 104px;
+    padding-top:35px;
+    padding-bottom: 36px;
+    padding-left: 47px;
+    border: none;
+}
+.week .left{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 34px 4px rgba(86, 86, 86, 0.1);
+    border-radius: 100%;
+    width: 523px;
+    height: 523px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.week  .left img{
+    width: 356px;
+    height: 227px;
+}
+.week .right strong{
+    font-family: 'Federo';
+    font-weight: 400;
+    font-size: 45px;
+    color: #3A3A3A;
+}
+.week .right span{
+    color:#78A2CA;
+}
+.week  .right p{
+    width: 401px;
+    color: #727272;
+}
+.week .right button{
+    background: #434343;
+    color:white;
+    outline: none;
+    border:none;
+    padding: 8px 16px;
+    margin-bottom: 26px;
+}
+.week .right .items{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+.week .right .item{
+    background: white;
+    border: 0.1px solid #000000;
+    padding: 12px 22px;
+}
+.week .right .item img{
+    width: 43px;
+    height: 63px;
+}
+.categories{
+    position: relative;
+    padding-bottom: 49px;
+}
+.categories .all-categories{
+   
+    border: 0.5px solid #E2E0DB;
+}
+.categories .swiper-button-next{
+   top:70%;
+    color: #797979;
+}
+.categories .swiper-button-prev{
+   
+   top:70%;
+    color: #797979;
+}
+.categories .all-categories{
+    width: 100%;
+    overflow: hidden;
+}
+.categories h5{
+    text-align: center;   
+    font-family: 'Federo';
+    font-size: 40px;
+    margin-bottom: 78px;
+}
+
+.categories .swiper-slide{
+    text-align: center;
+}
+.categories .swiper-slide:hover{
+    background: #FBF9F3;
+}
+.products .items .item{
+    width: 260px;
+    height: 366px;
+}
+.products .items .product-image{
+    width: 93px;
+    height: 172px;
+}
+.products .bottom-line{
+    margin-bottom: 30px;
+}
+.products .bottom-line .item{
+    width: 350px;
+}
+.hide{
+    display: none;
 }
