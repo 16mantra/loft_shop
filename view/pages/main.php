@@ -7,7 +7,7 @@ $all_products = array();
 foreach ($products as $product) {
     $all_products[$product['cat_id']][] = $product;
 }
- //echo "<pre>";
+//echo "<pre>";
 // print_r($all_products);
 //var_dump($categories);
 ?>
@@ -258,7 +258,7 @@ foreach ($products as $product) {
 
                 <!-- Slides -->
                 <?php foreach ($categories as $category): ?>
-                    <div id="<?=$category["name"]?>" class="swiper-slide category">
+                    <div id="<?= $category["name"] ?>" class="swiper-slide category">
 
                         <img src="<?= $category["image"] ?>" alt="">
                         <p><?= $category["name"] ?></p>
@@ -275,8 +275,10 @@ foreach ($products as $product) {
 <section class="best-seller products">
     <div class="container">
         <h2>Best Seller Items</h2>
-        <?php $j = 0; foreach ($all_products as $product): ?>
-            <div id="product-<?=$categories[$j]["name"]?>" class="cards <?= $j==0 ? "" : "hide"; $j++;?>" >
+        <?php $j = 0;
+        foreach ($all_products as $product): ?>
+            <div id="product-<?= $categories[$j]["name"] ?>" class="cards <?= $j == 0 ? "" : "hide";
+            $j++; ?>">
                 <div class="items">
                     <?php for ($i = 0; $i < 4; $i++): ?>
                         <div class="item ">
@@ -333,6 +335,49 @@ foreach ($products as $product) {
                 </div>
             </div>
         <?php endforeach; ?>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="background"></div>
+    <div class="container">
+        <div class="footer-content">
+
+            <a class="logo" href=""><img  src="<?=assets("img/logo.svg")?>" alt=""></a>
+            <div class="main">
+                <div class="left">
+                    <div>
+                        <h5>About us</h5>
+                        <p>About us</p>
+                        <p>Contact us</p>
+                        <p>Privacy policy</p>
+                        <p>Terms of Service</p>
+                    </div>
+                    <div>
+                        <h5>Company</h5>
+                        <p>Explore world</p>
+                        <p>Trending video</p>
+                        <p>Book a trip</p>
+                        <p>Visit gallery</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div>
+                        <h5>USEFUL LINKS</h5>
+                        <p>Buy this theme</p>
+                        <p>Drile Landing</p>
+                        <p>Documentation</p>
+                        <p>Video tutorial</p>
+                    </div>
+                    <div>
+                        <h5>FOLLOW US</h5>
+                        <a href="#"><img src="<?= assets("img/main_slider/inst.png") ?>" alt=""> Facebook</a>
+                        <a href="#"><img src="<?= assets("img/main_slider/inst.png") ?>" alt=""> Twitter</a>
+                        <a href="#"><img src="<?= assets("img/main_slider/inst.png") ?>" alt=""> Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

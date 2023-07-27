@@ -6,7 +6,6 @@ for(let i = 0; i < categories.length; i++){
         let pressedCard = document.querySelectorAll(`#product-${this.id}`)
         let allCards = document.querySelectorAll(".products .cards")
         for(j = 0; j < allCards.length; j++){
-            console.log(allCards[j])
             if(allCards[j] === pressedCard[0]){
                 allCards[j].classList.remove("hide")
             }
